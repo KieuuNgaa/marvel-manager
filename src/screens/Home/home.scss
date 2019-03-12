@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: unset !important;
+}
+header {
+  padding: 15px;
+  background-color: #2196f3;
+  .wrapper {
+    margin: 0 auto;
+  }
+  a {
+    color: #fff;
+    margin-right: 40px;
+    text-transform: uppercase;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.wrapper {
+  margin: 40px auto;
+  max-width: 1170px;
+  padding: 0 15px;
+
+  .characters {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 20px;
+
+    .character-item {
+      -webkit-box-shadow: 2px 2px 10px 0px rgba(161, 150, 161, 1);
+      -moz-box-shadow: 2px 2px 10px 0px rgba(161, 150, 161, 1);
+      box-shadow: 2px 2px 10px 0px rgba(161, 150, 161, 1);
+      border-radius: 10px;
+
+      .thumbnail-img {
+        text-align: center;
+        height: 250px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px 10px 0 0;
+        }
+      }
+
+      .thumbnail-content {
+        padding: 15px;
+
+        h4 {
+          font-size: 28px;
+          text-align: center;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  list-style: none;
+  margin-top: 60px;
+  text-align: right;
+  margin-bottom: 40px;
+
+  li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #2196f3;
+    text-align: center;
+    background-color: #fff;
+
+    a {
+      text-decoration: none;
+      color: #2196f3;
+      font-weight: 500;
+    }
+
+    &.active {
+      background-color: #2196f3;
+      a {
+        color: #fff;
+      }
+    }
+    &.disabled {
+      border-color: #8c8989;
+      a {
+        color: #8c8989;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .pagination {
+    text-align: center;
+    padding: 0 15px;
+    li {
+      margin: 0 3px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

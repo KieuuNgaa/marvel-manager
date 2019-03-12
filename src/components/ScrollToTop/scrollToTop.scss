@@ -1,0 +1,14 @@
+.scroll {
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    background-color: transparent;
+    img {
+        width: 40px;
+    }
+    &:focus {
+        outline: none;
+    }
+}

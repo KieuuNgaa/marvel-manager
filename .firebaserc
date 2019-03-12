@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "marvel-manager",
+    "staging": "marvel-manager-699e7"
+  }
+}
